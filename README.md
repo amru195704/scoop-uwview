@@ -6,6 +6,12 @@
 
 [Scoop](https://scoop.sh) bucket for [UwView](https://github.com/amru195704/UwView): open and search huge text/log files, with the `uvf` command.
 
+**Current version: 1.7.3.5 “Wide Field”** — [release notes](https://github.com/amru195704/UwView/releases/tag/v1.7.3.5)
+
+- Search many files at once: wildcards and `**` for subfolders, skipping files matched by `.gitignore` / `.ignore` (same rules as ripgrep)
+- Search compressed files as they decompress: `.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`, mixed with plain text in one run
+- Read multi-file results in the viewer, with a file list and tabs
+
 ```powershell
 scoop bucket add uwview https://github.com/amru195704/scoop-uwview
 scoop install uwview
@@ -14,8 +20,10 @@ scoop install uwview
 This adds a Start menu shortcut "UwView" and puts `uvf` on your PATH.
 
 ```powershell
-uvf app.log 'ERROR'          # search
-uvf app.log 'ERROR' -open    # search, then show the hits in the viewer
+uvf app.log 'ERROR'                  # search
+uvf app.log 'ERROR' -open            # search, then show the hits in the viewer
+uvf '*.log' 'ERROR'                  # several files at once (always quote the pattern)
+uvf 'app.log,app.log.*.gz' 'ERROR'   # plain text and compressed files together
 ```
 
 <img src="images/three-arenas-50gb-en.jpeg" width="100%" alt="One 51 GB file in three arenas. CLI search for one term: ripgrep 55.38 s, uvf 50.82 s. Find it and get it on screen: klogg 108.14 s, uvf -open 50.76 s. Second time: uvp with .uwvz 6.41 s">
@@ -32,6 +40,12 @@ License of UwView: PolyForm Internal Use 1.0.0, free for personal and internal b
 
 [UwView](https://github.com/amru195704/UwView) の [Scoop](https://scoop.sh) bucket です。巨大なテキスト／ログファイルを開いて探すアプリと、`uvf` コマンドが入ります。
 
+**現在の版: 1.7.3.5「Wide Field」** — [リリースノート](https://github.com/amru195704/UwView/releases/tag/v1.7.3.5)
+
+- 複数のファイルをまとめて探せます（ワイルドカード・サブフォルダーの `**`。`.gitignore`・`.ignore` に当たるファイルは ripgrep と同じ規則で外します）
+- 圧縮ファイルを展開しながら探せます（`.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`。平文と混ぜて1回で）
+- 複数ファイルの結果を画面で読めます（ファイル一覧とタブつき）
+
 ```powershell
 scoop bucket add uwview https://github.com/amru195704/scoop-uwview
 scoop install uwview
@@ -40,8 +54,10 @@ scoop install uwview
 スタートメニューに「UwView」が追加され、`uvf` コマンドがそのまま使えるようになります。
 
 ```powershell
-uvf app.log 'ERROR'          # 探す
-uvf app.log 'ERROR' -open    # 探して、当たりをそのまま画面で読む
+uvf app.log 'ERROR'                  # 探す
+uvf app.log 'ERROR' -open            # 探して、当たりをそのまま画面で読む
+uvf '*.log' 'ERROR'                  # 複数のファイルをまとめて（指定は必ず引用符で囲む）
+uvf 'app.log,app.log.*.gz' 'ERROR'   # 平文と圧縮ファイルを混ぜて
 ```
 
 <img src="images/three-arenas-50gb.jpeg" width="100%" alt="同じ50GBを3つの土俵で比べた棒グラフ。CLIで1語を探す: ripgrep 55.38秒・uvf 50.82秒。探して画面で読むまで: klogg 108.14秒・uvf -open 50.76秒。2回目: uvp（.uwvzあり）6.41秒">
