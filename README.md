@@ -6,7 +6,7 @@
 
 [Scoop](https://scoop.sh) bucket for [UwView](https://github.com/amru195704/UwView): open and search huge text/log files, with the `uvf` command.
 
-**Current version: 1.7.3.5 “Wide Field”** — [release notes](https://github.com/amru195704/UwView/releases/tag/v1.7.3.5)
+**Current version: 1.7.3.6 “Wide Field”** — [release notes](https://github.com/amru195704/UwView/releases/tag/v1.7.3.6)
 
 - Search many files at once: wildcards and `**` for subfolders, skipping files matched by `.gitignore` / `.ignore` (same rules as ripgrep)
 - Search compressed files as they decompress: `.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`, mixed with plain text in one run
@@ -40,7 +40,7 @@ License of UwView: PolyForm Internal Use 1.0.0, free for personal and internal b
 
 [UwView](https://github.com/amru195704/UwView) の [Scoop](https://scoop.sh) bucket です。巨大なテキスト／ログファイルを開いて探すアプリと、`uvf` コマンドが入ります。
 
-**現在の版: 1.7.3.5「Wide Field」** — [リリースノート](https://github.com/amru195704/UwView/releases/tag/v1.7.3.5)
+**現在の版: 1.7.3.6「Wide Field」** — [リリースノート](https://github.com/amru195704/UwView/releases/tag/v1.7.3.6)
 
 - 複数のファイルをまとめて探せます（ワイルドカード・サブフォルダーの `**`。`.gitignore`・`.ignore` に当たるファイルは ripgrep と同じ規則で外します）
 - 圧縮ファイルを展開しながら探せます（`.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`。平文と混ぜて1回で）
