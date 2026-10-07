@@ -1,5 +1,5 @@
 {
-    "version": "1.7.3.6.9",
+    "version": "1.8.1.9",
     "description": "Open and search huge text/log files (verified up to 258 GB). GUI viewer plus the uvf command.",
     "homepage": "https://github.com/amru195704/UwView",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/amru195704/UwView/releases/download/v1.7.3.6.9/UwView-1.7.3.6.9-win-x64.zip",
-            "hash": "7c33a8a01173a3df31406cd98df25247920348acf184cb55d48487a4edd1b4eb"
+            "url": "https://github.com/amru195704/UwView/releases/download/v1.8.1.9/UwView-1.8.1.9-win-x64.zip",
+            "hash": "077db178b5bc11eafb0479b24b4ab5b70580340cd3818cb4d7c0c3f404a2ede2"
         },
         "arm64": {
-            "url": "https://github.com/amru195704/UwView/releases/download/v1.7.3.6.9/UwView-1.7.3.6.9-win-arm64.zip",
-            "hash": "30d8ff9cd7455c86ca1acd4c9d55fd8cebfce5180684a29c8de7fe3f0592107d"
+            "url": "https://github.com/amru195704/UwView/releases/download/v1.8.1.9/UwView-1.8.1.9-win-arm64.zip",
+            "hash": "040d5465a0ed0189f7e4787016043438ed0e64e76f35d94d0044b762907b7545"
         }
     },
     "bin": "uvf.exe",
