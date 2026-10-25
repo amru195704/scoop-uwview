@@ -37,6 +37,31 @@ The manifest downloads the official archive from [GitHub Releases](https://githu
 
 License of UwView: PolyForm Internal Use 1.0.0, free for personal and internal business use. See [LICENSE](https://github.com/amru195704/UwView/blob/main/LICENSE).
 
+### UwDiff (in the same bucket)
+
+Compare two files or two folders in any format or encoding — the sister tool [UwDiff](https://github.com/amru195704/UwDiff) is in this bucket too, with the `uvd` command. **Current version: 1.0.0 “First Light”** — [release notes](https://github.com/amru195704/UwDiff/releases/tag/v1.0.0)
+
+- Text compared line by line with the order kept (unified diff); CSV, TSV and Excel matched by key columns, even when the row order differs
+- Inside 7 compressed formats and the text of Word, Excel and PDF files; UTF-8, Shift-JIS, EUC-JP and UTF-16 detected automatically
+
+```powershell
+scoop bucket add uwview https://github.com/amru195704/scoop-uwview   # skip if already added
+scoop install uwdiff
+```
+
+This adds a Start menu shortcut "UwDiff" and puts `uvd` on your PATH.
+
+```powershell
+uvd old.log new.log -o changes.diff          # text (same format as diff -u)
+uvd old.csv new.csv -key ID -o diff.csv      # table, matched by the ID column
+uvd old_dir new_dir -o list.csv              # folder vs folder
+uvd old.log new.log -open                    # show the result in the window
+```
+
+Update: `scoop update uwdiff` · Remove: `scoop uninstall uwdiff`
+
+License: [UwDiff License](https://github.com/amru195704/UwDiff/blob/main/LICENSE) (PolyForm Internal Use 1.0.0 plus a permission to redistribute the official binaries as packages). UwDiff is a separate product, not part of UwView.
+
 ## 日本語
 
 [UwView](https://github.com/amru195704/UwView) の [Scoop](https://scoop.sh) bucket です。巨大なテキスト／ログファイルを開いて探すアプリと、`uvf` コマンドが入ります。
@@ -71,3 +96,28 @@ uvf 'app.log,app.log.*.gz' 'ERROR'   # 平文と圧縮ファイルを混ぜて
 公式の zip を [GitHub Releases](https://github.com/amru195704/UwView/releases) から取得し、SHA256 を照合します。このリポジトリにアプリ本体は置いていません。Windows 版はまだコード署名していないため、初回起動時に SmartScreen が出ることがあります（「詳細情報」→「実行」）。
 
 UwView のライセンス: PolyForm Internal Use 1.0.0（個人利用・企業の社内業務利用は無料）。[LICENSE](https://github.com/amru195704/UwView/blob/main/LICENSE) をご覧ください。
+
+### UwDiff（同じ bucket）
+
+2つのファイル・2つのフォルダを、形式や文字コードを問わず比べる姉妹ツール [UwDiff](https://github.com/amru195704/UwDiff) も、この bucket から入れられます（`uvd` コマンドつき）。**現在の版: 1.0.0「First Light」** — [リリースノート](https://github.com/amru195704/UwDiff/releases/tag/v1.0.0)
+
+- テキストは行の並びを保って比べ（unified diff）、CSV・TSV・Excel はキー列で照合します（行の順番が違ってもよい）
+- 圧縮 7 形式の中身と Word・Excel・PDF の文字も比べ、UTF-8・Shift-JIS・EUC-JP・UTF-16 を自動判定します
+
+```powershell
+scoop bucket add uwview https://github.com/amru195704/scoop-uwview   # 追加済みなら不要
+scoop install uwdiff
+```
+
+スタートメニューに「UwDiff」が入り、`uvd` コマンドが PATH に入ります。
+
+```powershell
+uvd 旧.log 新.log -o 差分.diff            # テキスト（diff -u と同じ形）
+uvd 旧.csv 新.csv -key ID -o 差分.csv     # 表を ID 列で照合
+uvd 旧フォルダ 新フォルダ -o 一覧.csv       # フォルダどうし
+uvd 旧.log 新.log -open                  # 結果を画面で見る
+```
+
+更新: `scoop update uwdiff` ／ 削除: `scoop uninstall uwdiff`
+
+ライセンス: [UwDiff License](https://github.com/amru195704/UwDiff/blob/main/LICENSE)（PolyForm Internal Use 1.0.0 ＋ 公式バイナリのパッケージ再配布の許可）。UwDiff は UwView の一部ではなく、別の製品です。

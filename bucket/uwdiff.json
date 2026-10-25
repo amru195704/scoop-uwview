@@ -1,0 +1,41 @@
+{
+    "version": "1.0.0",
+    "description": "Compare two files or folders in any format or encoding (text, CSV/Excel by key, compressed, Word/Excel/PDF text). GUI plus the uvd command.",
+    "homepage": "https://github.com/amru195704/UwDiff",
+    "license": {
+        "identifier": "PolyForm-Internal-Use-1.0.0",
+        "url": "https://github.com/amru195704/UwDiff/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/amru195704/UwDiff/releases/download/v1.0.0/UwDiff-1.0.0-win-x64.zip",
+            "hash": "b8137d9a02c735c668efbf0751e2f85e7255fd7f04ad994b630dcd71cd6c340b"
+        },
+        "arm64": {
+            "url": "https://github.com/amru195704/UwDiff/releases/download/v1.0.0/UwDiff-1.0.0-win-arm64.zip",
+            "hash": "a4da8049e0fc5131ae6d481ee419616eeed4fc370bdab2f865149c84872555f5"
+        }
+    },
+    "extract_dir": "UwDiff-1.0.0",
+    "bin": "uvd.exe",
+    "shortcuts": [
+        [
+            "UwDiff.exe",
+            "UwDiff"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/amru195704/UwDiff"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/amru195704/UwDiff/releases/download/v$version/UwDiff-$version-win-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/amru195704/UwDiff/releases/download/v$version/UwDiff-$version-win-arm64.zip"
+            }
+        },
+        "extract_dir": "UwDiff-$version"
+    }
+}
