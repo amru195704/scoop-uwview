@@ -6,11 +6,12 @@
 
 [Scoop](https://scoop.sh) bucket for [UwView](https://github.com/amru195704/UwView): open and search huge text/log files, with the `uvf` command.
 
-**Current version: 1.8.1.9 “Finder Scope”** — [release notes](https://github.com/amru195704/UwView/releases/tag/v1.8.1.9)
+**Current version: 1.9.1** (v1.9 “Full Spectrum”) — [release notes](https://github.com/amru195704/UwView/releases/tag/v1.9.1)
 
 - Search many files at once: wildcards and `**` for subfolders, skipping files matched by `.gitignore` / `.ignore` (same rules as ripgrep)
 - Search compressed files as they decompress: `.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`, mixed with plain text in one run
 - Read multi-file results in the viewer, with a file list and tabs
+- Search the text inside Word (.docx), Excel (.xlsx) and PDF files (from v1.9)
 
 ```powershell
 scoop bucket add uwview https://github.com/amru195704/scoop-uwview
@@ -40,11 +41,12 @@ License of UwView: PolyForm Internal Use 1.0.0, free for personal and internal b
 
 [UwView](https://github.com/amru195704/UwView) の [Scoop](https://scoop.sh) bucket です。巨大なテキスト／ログファイルを開いて探すアプリと、`uvf` コマンドが入ります。
 
-**現在の版: 1.8.1.9「Finder Scope」** — [リリースノート](https://github.com/amru195704/UwView/releases/tag/v1.8.1.9)
+**現在の版: 1.9.1**（v1.9「Full Spectrum」） — [リリースノート](https://github.com/amru195704/UwView/releases/tag/v1.9.1)
 
 - 複数のファイルをまとめて探せます（ワイルドカード・サブフォルダーの `**`。`.gitignore`・`.ignore` に当たるファイルは ripgrep と同じ規則で外します）
 - 圧縮ファイルを展開しながら探せます（`.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`。平文と混ぜて1回で）
 - 複数ファイルの結果を画面で読めます（ファイル一覧とタブつき）
+- Word（.docx）・Excel（.xlsx）・PDF の中の文字も探せます（v1.9 から）
 
 ```powershell
 scoop bucket add uwview https://github.com/amru195704/scoop-uwview
