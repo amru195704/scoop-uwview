@@ -13,6 +13,14 @@
 - Read multi-file results in the viewer, with a file list and tabs
 - Search the text inside Word (.docx), Excel (.xlsx) and PDF files (from v1.9)
 
+**First time: install Scoop itself.** Run these in **PowerShell**, not Command Prompt (open "PowerShell" from the Start menu as a normal user, not as administrator; the prompt starts with `PS C:\...>`):
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   # answer Y if asked
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression        # installs Scoop
+scoop install git                                                        # adding a bucket needs git
+```
+If `Set-ExecutionPolicy` is "not recognized", you are in Command Prompt. Then:
+
 ```powershell
 scoop bucket add uwview https://github.com/amru195704/scoop-uwview
 scoop install uwview
@@ -72,6 +80,14 @@ License: [UwDiff License](https://github.com/amru195704/UwDiff/blob/main/LICENSE
 - 圧縮ファイルを展開しながら探せます（`.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`。平文と混ぜて1回で）
 - 複数ファイルの結果を画面で読めます（ファイル一覧とタブつき）
 - Word（.docx）・Excel（.xlsx）・PDF の中の文字も探せます（v1.9 から）
+
+**初めての方は、先に Scoop 本体を入れます。** コマンドプロンプトではなく **PowerShell** で実行します（スタートメニューで「PowerShell」を検索し、管理者ではない普通の権限で開く。行の頭が `PS C:\...>`）:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   # 聞かれたら Y
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression        # Scoop を入れる
+scoop install git                                                        # バケットの追加に git が要る
+```
+`Set-ExecutionPolicy` が「見つからない」と出るときは、コマンドプロンプトで打っています。続けて:
 
 ```powershell
 scoop bucket add uwview https://github.com/amru195704/scoop-uwview
