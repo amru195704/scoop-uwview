@@ -9,11 +9,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/amru195704/UwDiff/releases/download/v2.0.0/UwDiff-2.0.0-win-x64.zip",
-            "hash": "c0e5a5b607675c9b05188cc9bab761d29e448041e7e436a75749706f782c66c0"
+            "hash": "4d14b5f8921112be75073e440dfd95eb185fac151b4c851c58bfd66c62c1fc94"
         },
         "arm64": {
             "url": "https://github.com/amru195704/UwDiff/releases/download/v2.0.0/UwDiff-2.0.0-win-arm64.zip",
-            "hash": "88538a0470e688ca859293afbcf7177e30b2662585da3e5a635366da6223b720"
+            "hash": "1b2cdf8cd1e090addf27fb8ff5105a3445704c18e80c3efb5059be5169b24558"
         }
     },
     "extract_dir": "UwDiff-2.0.0",
