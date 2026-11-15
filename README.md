@@ -8,12 +8,13 @@
 
 [Scoop](https://scoop.sh) bucket for [UwView](https://github.com/amru195704/UwView): open and search huge text/log files, with the `uvf` command.
 
-**Current version: 1.9.1** (v1.9 “Full Spectrum”) — [release notes](https://github.com/amru195704/UwView/releases/tag/v1.9.1)
+**Current version: 2.0.0** (v2.0 “Fixed Star”) — [release notes](https://github.com/amru195704/UwView/releases/tag/v2.0.0)
 
 - Search many files at once: wildcards and `**` for subfolders, skipping files matched by `.gitignore` / `.ignore` (same rules as ripgrep)
 - Search compressed files as they decompress: `.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`, mixed with plain text in one run
 - Read multi-file results in the viewer, with a file list and tabs
 - Search the text inside Word (.docx), Excel (.xlsx) and PDF files (from v1.9)
+- From v2.0, a support message (GitHub Sponsors) appears now and then in a bar at the bottom of the window; it is not modal and can be turned off in Settings. Days of use are counted on your computer only
 
 **First time: install Scoop itself.** Run these in **PowerShell**, not Command Prompt (open "PowerShell" from the Start menu as a normal user, not as administrator; the prompt starts with `PS C:\...>`):
 ```powershell
@@ -49,7 +50,7 @@ License of UwView: PolyForm Internal Use 1.0.0, free for personal and internal b
 
 ### UwDiff (in the same bucket)
 
-Compare two files or two folders in any format or encoding — the sister tool [UwDiff](https://github.com/amru195704/UwDiff) is in this bucket too, with the `uvd` command. **Current version: 1.0.0 “First Light”** — [release notes](https://github.com/amru195704/UwDiff/releases/tag/v1.0.0)
+Compare two files or two folders in any format or encoding — the sister tool [UwDiff](https://github.com/amru195704/UwDiff) is in this bucket too, with the `uvd` command. **Current version: 2.0.0 “Fixed Star”** — [release notes](https://github.com/amru195704/UwDiff/releases/tag/v2.0.0)
 
 - Text compared line by line with the order kept (unified diff); CSV, TSV and Excel matched by key columns, even when the row order differs
 - Inside 7 compressed formats and the text of Word, Excel and PDF files; UTF-8, Shift-JIS, EUC-JP and UTF-16 detected automatically
@@ -78,12 +79,13 @@ License: [UwDiff License](https://github.com/amru195704/UwDiff/blob/main/LICENSE
 
 [UwView](https://github.com/amru195704/UwView) の [Scoop](https://scoop.sh) bucket です。巨大なテキスト／ログファイルを開いて探すアプリと、`uvf` コマンドが入ります。
 
-**現在の版: 1.9.1**（v1.9「Full Spectrum」） — [リリースノート](https://github.com/amru195704/UwView/releases/tag/v1.9.1)
+**現在の版: 2.0.0**（v2.0「Fixed Star」） — [リリースノート](https://github.com/amru195704/UwView/releases/tag/v2.0.0)
 
 - 複数のファイルをまとめて探せます（ワイルドカード・サブフォルダーの `**`。`.gitignore`・`.ignore` に当たるファイルは ripgrep と同じ規則で外します）
 - 圧縮ファイルを展開しながら探せます（`.gz` `.bz2` `.xz` `.lzma` `.zst` `.lz4` `.br`。平文と混ぜて1回で）
 - 複数ファイルの結果を画面で読めます（ファイル一覧とタブつき）
 - Word（.docx）・Excel（.xlsx）・PDF の中の文字も探せます（v1.9 から）
+- v2.0 から、ときどき画面の下に支援の案内（GitHub Sponsors）の帯が出ます。閉じなくても作業でき、設定で止められます。使った日数はこのパソコンの中だけで数えます
 
 **初めての方は、先に Scoop 本体を入れます。** コマンドプロンプトではなく **PowerShell** で実行します（スタートメニューで「PowerShell」を検索し、管理者ではない普通の権限で開く。行の頭が `PS C:\...>`）:
 ```powershell
@@ -119,7 +121,7 @@ UwView のライセンス: PolyForm Internal Use 1.0.0（個人利用・企業�
 
 ### UwDiff（同じ bucket）
 
-2つのファイル・2つのフォルダを、形式や文字コードを問わず比べる姉妹ツール [UwDiff](https://github.com/amru195704/UwDiff) も、この bucket から入れられます（`uvd` コマンドつき）。**現在の版: 1.0.0「First Light」** — [リリースノート](https://github.com/amru195704/UwDiff/releases/tag/v1.0.0)
+2つのファイル・2つのフォルダを、形式や文字コードを問わず比べる姉妹ツール [UwDiff](https://github.com/amru195704/UwDiff) も、この bucket から入れられます（`uvd` コマンドつき）。**現在の版: 2.0.0「Fixed Star」** — [リリースノート](https://github.com/amru195704/UwDiff/releases/tag/v2.0.0)
 
 - テキストは行の並びを保って比べ（unified diff）、CSV・TSV・Excel はキー列で照合します（行の順番が違ってもよい）
 - 圧縮 7 形式の中身と Word・Excel・PDF の文字も比べ、UTF-8・Shift-JIS・EUC-JP・UTF-16 を自動判定します
